@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Geoffrey Ulman : My Projects and Research" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Geoffrey Ulman</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ulmangt/cv">View on GitHub</a>
+
+          <h1 id="project_title">Geoffrey Ulman</h1>
+          <h2 id="project_tagline">My Projects and Research</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ulmangt/cv/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ulmangt/cv/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h4>
+<a name="glimpse-data-visualization-library" class="anchor" href="#glimpse-data-visualization-library"><span class="octicon octicon-link"></span></a><a href="http://metsci.github.io/glimpse/index.html">Glimpse Data Visualization Library</a>
+</h4>
+
+<p><img src="http://metsci.github.io/glimpse/images/SampleApplication1.png" alt="Glimpse Screenshot"></p>
+
+<p><a href="http://metsci.github.io/glimpse/index.html">Glimpse</a> is a Java/OpenGL data visualization library designed to simplify utilizing powerful GPU hardware features like shaders, vertex buffers, and cached texture memory to display and interact with large data sets. It's available on <a href="http://search.maven.org/#browse%7C1117099642">Maven Central</a> or on GitHub at metsci/glimpse.</p>
+
+<h4>
+<a name="java-very-fast-machine-learning-toolkit" class="anchor" href="#java-very-fast-machine-learning-toolkit"><span class="octicon octicon-link"></span></a><a href="http://ulmangt.github.io/vfml/">Java Very Fast Machine Learning Toolkit</a>
+</h4>
+
+<p><img src="https://googledrive.com/host/0B9qrDMuiaIaNcjlwU082amtrak0/JVFML_Weka.png" alt="Weka JVFML"></p>
+
+<p>Based on original work by Hulten, G. and Domingos, P. "VFML -- A toolkit for mining high-speed time-changing data streams" <a href="http://www.cs.washington.edu/dm/vfml/">http://www.cs.washington.edu/dm/vfml/</a>. 2003. This software provides a Java implementation of the stream-based decision tree algorithm described by Hulten and Domingos. The algorithm utilizes the <a href="http://en.wikipedia.org/wiki/Chernoff_bounds">Chernoff (or Hoeffding) Bound</a> to provide a statistical basis for when to branch the decision tree without having to re-analyze all available training examples. See: <a href="https://drive.google.com/?authuser=0#folders/0B9qrDMuiaIaNUF9wWGNWY3dvREE">Mining Massive Data Streams.pptx</a> or the <a href="http://ulmangt.github.io/vfml/">JVMFL</a> site for further details.</p>
+
+<h4>
+<a name="jcuda-dynamic-histogram-visualization" class="anchor" href="#jcuda-dynamic-histogram-visualization"><span class="octicon octicon-link"></span></a><a href="https://github.com/ulmangt/cs706project">JCUDA Dynamic Histogram Visualization</a>
+</h4>
+
+<p><img src="https://raw.githubusercontent.com/ulmangt/cs706project/master/report/screenshots/glimpse/GlimpseHistogramPlot.png" alt="Glimpse Histogram Plot"></p>
+
+<p>This project was an experiment in interfacing <a href="http://www.nvidia.com/object/cuda_home_new.html">CUDA</a> directly with <a href="http://metsci.github.io/glimpse/index.html">Glimpse</a> OpenGL visualizations. In this case, using CUDA to read heat map data stored in an OpenGL texture and calculate an on-the-fly histogram of a selected subset of the data.</p>
+
+<h4>
+<a name="support-vector-machine-handwriting-recognition" class="anchor" href="#support-vector-machine-handwriting-recognition"><span class="octicon octicon-link"></span></a><a href="https://code.google.com/p/csi873/">Support Vector Machine Handwriting Recognition</a>
+</h4>
+
+<p><img src="https://googledrive.com/host/0B9qrDMuiaIaNRXJaWnlvVjNpa1U/test2_5_correct5s_a0156.png" alt="SVM Results"></p>
+
+<p><a href="http://www.ampl.com/">AMPL</a> was used to model a support vector machine optimization problem to classify low resolution images of the digits 0 through 9. Results, codes, and screenshots are available in the <a>final report</a> or the <a href="https://code.google.com/p/csi873/">project site</a>.</p>
+
+<h4>
+<a name="bayesian-particle-filter-tracking-in-cuda" class="anchor" href="#bayesian-particle-filter-tracking-in-cuda"><span class="octicon octicon-link"></span></a><a href="https://code.google.com/p/csi702/">Bayesian Particle Filter Tracking in CUDA</a>
+</h4>
+
+<p><img src="https://googledrive.com/host/0B9qrDMuiaIaNRXJaWnlvVjNpa1U/azimuth_only_2900.png" alt="Particle Filter"></p>
+
+<p>CUDA provides an excellent computational framework for problems which can be described via <a href="http://en.wikipedia.org/wiki/SIMD">SIMD</a> operations. However, more complicated operations like reductions (summations), filtering, or sorting require careful use of the shared memory and synchronization capabilities provided by the GPU hardware.</p>
+
+<p>Bayesian inference using discrete particles to approximate a highly non-linear posterior probability surface is an example of such a problem which is difficult </p>
+
+<h4>
+<a name="malaysian-airlines-flight-370" class="anchor" href="#malaysian-airlines-flight-370"><span class="octicon octicon-link"></span></a><a href="http://www.cnn.com/video/data/2.0/video/world/2014/03/21/tsr-dnt-todd-plane-search-treacherous-water.cnn.html">Malaysian Airlines Flight 370</a>
+</h4>
+
+<p><img src="https://googledrive.com/host/0B9qrDMuiaIaNRXJaWnlvVjNpa1U/CNN_Malaysian_Airline.png" alt="Malaysian Airlines Flight 370"></p>
+
+<p>Metron, Inc. was involved with the search for <a href="http://www.bbc.com/news/magazine-26680633">Air France Flight 447</a> and representatives appeared on a number of news segments following the Malaysian Airlines Flight 370 disappearance. One of those segments featured software which I developed; displaying global shipping patterns (or lack thereof) in the suspected region of the disappearance: <a href="http://www.cnn.com/video/data/2.0/video/world/2014/03/21/tsr-dnt-todd-plane-search-treacherous-water.cnn.html">Dangerous Conditions Await Search Crews</a>.</p>
+
+<h4>
+<a name="data-sets" class="anchor" href="#data-sets"><span class="octicon octicon-link"></span></a>Data Sets</h4>
+
+<h3>
+<a name="world-bank-climate-change-data" class="anchor" href="#world-bank-climate-change-data"><span class="octicon octicon-link"></span></a><a href="https://github.com/ulmangt/climate-change-data">World Bank Climate Change Data</a>
+</h3>
+
+<p>The <a href="http://data.worldbank.org/data-catalog">World Bank</a> provides a large collection of interesting data sets. To facilitate experimenting with applying machine learning techniques to these data sets, I've converted some of their climate change data into ARFF and CSV formats readable by <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Geoffrey Ulman maintained by <a href="https://github.com/ulmangt">ulmangt</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
